@@ -30,22 +30,31 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (state == State.IDLE)
         {
-            if(state == State.IDLE && bottomBar.IsCompleted())
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
-                if(bottomBar.IsLastSentence())
+                if(bottomBar.IsCompleted())
                 {
-                    PlayScene((currentScene as StoryScene).nextScene);
+                    bottomBar.StopTyping();
+                    if(bottomBar.IsLastSentence())
+                    {
+                        PlayScene((currentScene as StoryScene).nextScene);
+                    }
+                    else
+                    {
+                        bottomBar.PlayNextSetence();
+                        PlayAudio((currentScene as StoryScene).sentences[bottomBar.GetSentenceIndex()]);
+                    }
                 }
                 else
                 {
-                    bottomBar.PlayNextSetence();
-                    PlayAudio((currentScene as StoryScene).sentences[bottomBar.GetSentenceIndex()]);
+                    bottomBar.SpeedUp();
                 }
-            }
             
-        } 
+            } 
+        }
+        
     }
 
     public void PlayScene(GameScene scene)

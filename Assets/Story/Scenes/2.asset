@@ -15,7 +15,11 @@ MonoBehaviour:
   sentences:
   - text: bbbbbbbbbb
     speaker: {fileID: 11400000, guid: 28aa25e6577a0ae42a20e3b8d8f751c2, type: 2}
+    music: {fileID: 8300000, guid: 36997d859356d9e4487c0b1bd95417c0, type: 3}
+    sound: {fileID: 0}
   - text: ccccccccc
     speaker: {fileID: 11400000, guid: 28aa25e6577a0ae42a20e3b8d8f751c2, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
   background: {fileID: -2101284219901785934, guid: 63bfaedeffbfb5c40aeba568c3b38573, type: 3}
   nextScene: {fileID: 11400000, guid: efe364df04360d641991a86bd8b56b5e, type: 2}

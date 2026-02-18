@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Isla
   m_EditorClassIdentifier: 
   sentences:
-  - text: Hello Epstein
+  - text: Hello Epsteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeein
     speaker: {fileID: 11400000, guid: a2adf77a4c0b12e4ba12a5bd1a1329e0, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 8300000, guid: 23d8230c28cf6f54e885cde3d619b376, type: 3}
   background: {fileID: 8943411336651070049, guid: b975c30796672be418ac6f246a140b7c, type: 3}
   nextScene: {fileID: 0}
