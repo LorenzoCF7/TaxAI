@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
     public BackgroundController backgroundController;
     private State state = State.IDLE;
     public ChooseController chooseController;
+    public AudioController audioController;
 
     private enum State
     {
@@ -22,6 +23,7 @@ public class GameController : MonoBehaviour
             StoryScene storyScene = currentScene as StoryScene;
             bottomBar.PlayScene(storyScene);   
             backgroundController.SetImage(storyScene.background);
+            PlayAudio(storyScene.sentences[0]);
         }
     }
 
@@ -39,6 +41,7 @@ public class GameController : MonoBehaviour
                 else
                 {
                     bottomBar.PlayNextSetence();
+                    PlayAudio((currentScene as StoryScene).sentences[bottomBar.GetSentenceIndex()]);
                 }
             }
             
@@ -60,6 +63,7 @@ public class GameController : MonoBehaviour
         {
             StoryScene storyScene = scene as StoryScene;
             backgroundController.SwitchImage(storyScene.background);
+            PlayAudio(storyScene.sentences[0]);
             yield return new WaitForSeconds(1f);
             bottomBar.ClearText();
             bottomBar.Show();
@@ -73,5 +77,10 @@ public class GameController : MonoBehaviour
             chooseController.SetupChoose(scene as ChooseScene);
         }
         
+    }
+
+    private void PlayAudio(StoryScene.Sentence sentence)
+    {
+        audioController.PlayAudio(sentence.music, sentence.sound);
     }
 }
