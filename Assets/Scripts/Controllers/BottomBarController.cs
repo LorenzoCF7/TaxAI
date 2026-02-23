@@ -13,9 +13,12 @@ public class BottomBarController : MonoBehaviour
     private Animator animator;
     private bool isHidden = false;
 
+    private Coroutine typingCoroutine;
+    private float speedFactor = 1f;
+
     private enum State
     {
-        PLAYING, COMPLETED
+        PLAYING, SPEEDED_UP, COMPLETED
     }
 
     private void Start()
@@ -49,27 +52,56 @@ public class BottomBarController : MonoBehaviour
         personNameText.text = "";
     }
 
-    public void PlayScene(StoryScene scene)
+    public void PlayScene(StoryScene scene, int senteceIndex = -1, bool isAnimated = true)
     {
         currentScene = scene;
-        sentenceIndex = -1;
-        PlayNextSetence();
+        this.sentenceIndex = senteceIndex;
+        PlayNextSentence(isAnimated);
     }
-    public void PlayNextSetence()
+    public void PlayNextSentence(bool isAnimated = true)
     {
-        StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
-        personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
-        personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+        sentenceIndex++;
+        PlaySentence(isAnimated);
+    }
+
+    public void goBack()
+    {
+        sentenceIndex--;
+        PlaySentence(false);
     }
 
     public bool IsCompleted()
     {
-        return state == State.COMPLETED;
+        return state == State.COMPLETED || state == State.SPEEDED_UP;
     }
 
     public bool IsLastSentence()
     {
         return sentenceIndex + 1 == currentScene.sentences.Count;
+    }
+
+    public bool IsFirstSentence()
+    {
+        return sentenceIndex == 0;
+    }
+    public void SpeedUp()
+    {
+        state = State.SPEEDED_UP;
+        speedFactor = 0.25f;
+     }
+
+     public void StopTyping()
+     {
+        state = State.COMPLETED;
+        StopCoroutine(typingCoroutine);
+     }
+
+     private void PlaySentence(bool isAnimated = true)
+    {
+        speedFactor = 1f;
+        typingCoroutine = StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
+        personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
+        personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
     }
 
     private IEnumerator TypeText(string text)
@@ -80,7 +112,7 @@ public class BottomBarController : MonoBehaviour
         while (state != State.COMPLETED)
         {
             barText.text += text[wordIndex];
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(speedFactor *0.05f);
             if (++wordIndex == text.Length)
             {
                 state = State.COMPLETED;
