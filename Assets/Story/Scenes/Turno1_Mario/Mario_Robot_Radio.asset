@@ -12,6 +12,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cfa68ec4eee61e4eaced713bfacd37c, type: 3}
   m_Name: Mario_Robot_Radio
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - text: "**Enciendes la radio por petici\xF3n del cliente**"
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: /GHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH/
+    speaker: {fileID: 11400000, guid: c2b6fb5605ab3c64fb91a9700b902ca9, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Noticias de ultima hora. Varios informes recientes han alarmado al gobierno.
+      Afirman que las mutaciones cada vez son m\xE1s peligrosas"
+    speaker: {fileID: 11400000, guid: c2b6fb5605ab3c64fb91a9700b902ca9, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Los expertos y las autoridades recomiendan no salir de casa y lo m\xE1s
+      importante, asegurarse de que todas las puertas y puntos de acceso est\xE1n
+      cerrados"
+    speaker: {fileID: 11400000, guid: c2b6fb5605ab3c64fb91a9700b902ca9, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: /GHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH/
+    speaker: {fileID: 11400000, guid: c2b6fb5605ab3c64fb91a9700b902ca9, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "**Apagas la radio debido a la corta se\xF1al**"
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Dios... mio\u2026 esas cosas... realmente dan mucho miedo, tengo tantas
+      preguntas. \xBFDe donde vienen?, \xBFQu\xE9 quieren, por que son tan agresivas
+      con nosotros?"
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Jeje... conozco la historia de un tio que era conocido de un amigo de
+      un amigo mio \xBFsabes? acab\xF3 acost\xE1ndose con un doble de esos "
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\xBFQu\xE9 que pas\xF3? "
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Murio
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Le acabo destripando y muri\xF3 el muy desgraciado. Pero bueno, la chavala
+      era fea, por algo ser\xE1. "
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: dd79bdd879affc9429c05897c8a981a6, type: 2}

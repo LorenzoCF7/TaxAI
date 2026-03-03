@@ -12,6 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cfa68ec4eee61e4eaced713bfacd37c, type: 3}
   m_Name: Mario_Central
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - text: "**Llamas a la central pero no detectan ninguna anomal\xEDa **"
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "**El hombre te mira extra\xF1ado**"
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\xBFQu\xE9 haces chaval? \xBFTodo bien?"
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
   background: {fileID: 0}
   nextScene: {fileID: 0}

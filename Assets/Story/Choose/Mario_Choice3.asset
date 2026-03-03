@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - text: Continuar con el trayecto
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: a1e33a41fa694004a91672d57d928d0a, type: 2}
     requiredItem: {fileID: 0}
     grantedItem: {fileID: 0}
   - text: Llamar a la central
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 5f2568987e55c2f4ca7f239567c841b5, type: 2}
     requiredItem: {fileID: 0}
     grantedItem: {fileID: 0}

@@ -12,6 +12,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cfa68ec4eee61e4eaced713bfacd37c, type: 3}
   m_Name: Mario_Robot
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - text: Soy un robot
+    speaker: {fileID: 11400000, guid: daad6e1c9dd542b4794873f013a2b1b8, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Un... \xBFrobot?"
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Soy una unidad GFO, es decir, estoy preparado para servir a mis clientes
+      en este servicio de transporte publico se\xF1or"
+    speaker: {fileID: 11400000, guid: daad6e1c9dd542b4794873f013a2b1b8, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Genial... o voy muy borracho... o voy muy borracho, no queda de otra
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Tranquilo se\xF1or, estoy muy capacitado para esta tarea"
+    speaker: {fileID: 11400000, guid: daad6e1c9dd542b4794873f013a2b1b8, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Claro... Lo que tu... digas.
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: '**Un silencio enorme recorre la escena**'
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\xBFPuedes poner la radio?"
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: ece3b639b34585644b660ec6dc9720bc, type: 2}

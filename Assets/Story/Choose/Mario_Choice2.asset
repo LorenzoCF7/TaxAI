@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - text: "(Mentir) Tengo 24 a\xF1os se\xF1or, \xBFpor qu\xE9 lo pregunta?"
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 01a2501070685a94d848a6598957fe83, type: 2}
     requiredItem: {fileID: 0}
     grantedItem: {fileID: 0}
   - text: Soy un robot
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 29cad129442b02d4688040b51a06b080, type: 2}
     requiredItem: {fileID: 0}
     grantedItem: {fileID: 0}

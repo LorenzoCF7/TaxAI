@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - text: Parar el coche
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 0cbad61e7d6d41e4382240d267fe5b31, type: 2}
     requiredItem: {fileID: 0}
     grantedItem: {fileID: 0}
   - text: Continuar
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: ad62a87503923a049ae9bd8edc785f10, type: 2}
     requiredItem: {fileID: 0}
     grantedItem: {fileID: 0}
   - text: "Llamar a la central\t"
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 5f2568987e55c2f4ca7f239567c841b5, type: 2}
     requiredItem: {fileID: 0}
     grantedItem: {fileID: 0}

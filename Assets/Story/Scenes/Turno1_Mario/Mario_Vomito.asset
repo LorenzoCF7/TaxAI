@@ -24,7 +24,33 @@ MonoBehaviour:
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "Bllluuughhh\u2026 Creo... que ya... BLLLUUUUUUUUGHHHH"
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: '**El hombre vuelve a vomitar**'
     speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Ughh\u2026 ufff\u2026 ya... ahora si... ya..."
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: '**Piensas en el trabajo que vas a tener que realizar de mantenimiento,
+      va a ser horrible**'
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Perdon colega... ya sabes... es lo que tiene beber tanto
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "En fin... Toma el dinero, qu\xE9date el cambio y muchas gracias"
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
     actions: []
     music: {fileID: 0}
     sound: {fileID: 0}

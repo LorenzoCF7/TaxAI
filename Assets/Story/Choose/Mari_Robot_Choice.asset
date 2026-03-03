@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935d10cfe2023ab4b90a23db10bd4d26, type: 3}
   m_Name: Mari_Robot_Choice
   m_EditorClassIdentifier: 
-  labels: []
+  labels:
+  - text: Tomar el crucifijo
+    nextScene: {fileID: 11400000, guid: f514117e441b67a4f8953669fbefdd4e, type: 2}
+    requiredItem: {fileID: 0}
+    grantedItem: {fileID: 11400000, guid: 4dddbb56fe3cf7a4e8c1e3b86beaac94, type: 2}
