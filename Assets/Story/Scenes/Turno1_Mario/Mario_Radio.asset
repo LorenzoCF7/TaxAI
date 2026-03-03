@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cfa68ec4eee61e4eaced713bfacd37c, type: 3}
+  m_Name: Mario_Radio
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Enciendes la radio por petici\xF3n del hombre"
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: /GHHHHHHHHHHHHHHHHHHHHHH/
+    speaker: {fileID: 11400000, guid: c2b6fb5605ab3c64fb91a9700b902ca9, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Noticias de ultima hora, una mujer de mediana edad y su hija son halladas
+      asesinadas en un piso cerca de la ubr-
+    speaker: {fileID: 11400000, guid: c2b6fb5605ab3c64fb91a9700b902ca9, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: /GHHHHHHHHHHHHHH/
+    speaker: {fileID: 11400000, guid: c2b6fb5605ab3c64fb91a9700b902ca9, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "El sospech- a cargo de la menor. El asesinato sugieren ser producto de
+      una discusi\xF3n aunque no se descarta la posibilidad de un ataque por parte
+      de un doppelganger"
+    speaker: {fileID: 11400000, guid: c2b6fb5605ab3c64fb91a9700b902ca9, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: /GHHHHHHHHHHHHHHH/
+    speaker: {fileID: 11400000, guid: c2b6fb5605ab3c64fb91a9700b902ca9, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "**No hay m\xE1s se\xF1al**"
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: '**Apagas la radio**'
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Joder... Que puto asco de sociedad... \xBFSabes? Antes yo era una persona
+      exitosa..."
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Pero ahora solo soy un puto perdedor que ha sido enga\xF1ado por la zorra
+      de su mujer \xBFpor que?"
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Por dinero, simple y llanamente por dinero...
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Por dinero, simple y llanamente por dinero...
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 0}
+  nextScene: {fileID: 0}

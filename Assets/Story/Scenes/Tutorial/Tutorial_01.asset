@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cfa68ec4eee61e4eaced713bfacd37c, type: 3}
+  m_Name: Tutorial_01
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: '**PROGRAMA-GFO ACTIVADO** '
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: b4c59828273af78489cf5e1fddfdded0, type: 3}
+    sound: {fileID: 0}
+  - text: 'Por fin... tardas en encenderte... '
+    speaker: {fileID: 11400000, guid: a5a6113b080e80f42995171e0e3df179, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\xBFD\xF3nde estoy?"
+    speaker: {fileID: 11400000, guid: daad6e1c9dd542b4794873f013a2b1b8, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Procedamos con el manual de intervenci\xF3n "
+    speaker: {fileID: 11400000, guid: a5a6113b080e80f42995171e0e3df179, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\xBFEl...Manual...?"
+    speaker: {fileID: 11400000, guid: a5a6113b080e80f42995171e0e3df179, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "El manual de intervenci\xF3n contra doppelgangers"
+    speaker: {fileID: 11400000, guid: a5a6113b080e80f42995171e0e3df179, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\xBFAcaso se ha fundido tu base de datos? Est\xFApida chatarra... "
+    speaker: {fileID: 11400000, guid: a5a6113b080e80f42995171e0e3df179, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: 'Como iba diciendo, tu tarea es continuar con la rutina de transporte publico '
+    speaker: {fileID: 11400000, guid: a5a6113b080e80f42995171e0e3df179, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Recoger clientes, llevarlos a su destino, recoger la pasta
+    speaker: {fileID: 11400000, guid: a5a6113b080e80f42995171e0e3df179, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: -1817558909277469638, guid: 3f012e31156587d429b0b8af95499fe4, type: 3}
+  nextScene: {fileID: 11400000, guid: d5ddc775df7856741a0868a8237ed919, type: 2}

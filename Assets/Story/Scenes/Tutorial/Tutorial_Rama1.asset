@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cfa68ec4eee61e4eaced713bfacd37c, type: 3}
+  m_Name: Tutorial_Rama1
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Ugh\u2026 Esta bien. Los doppelgangers son \"visitantes\" que como su
+      nombre dice son dobles "
+    speaker: {fileID: 11400000, guid: a5a6113b080e80f42995171e0e3df179, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\xBFDobles?"
+    speaker: {fileID: 11400000, guid: daad6e1c9dd542b4794873f013a2b1b8, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: 'Si. Se hacen pasar por sus victimas con el fin de acercarse a la especie
+      humana con el fin de continuar un bucle sangriento sin fin. '
+    speaker: {fileID: 11400000, guid: a5a6113b080e80f42995171e0e3df179, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: -1817558909277469638, guid: 3f012e31156587d429b0b8af95499fe4, type: 3}
+  nextScene: {fileID: 11400000, guid: 4107424134c856042a1367b48355caa1, type: 2}

@@ -13,6 +13,9 @@ public class ChooseScene : GameScene
     {
         public string text;
         public StoryScene nextScene;
+        [Header("Condiciones (opcional)")]
+        public Item requiredItem;      // Item necesario para ver esta opción
+        public Item grantedItem;       // Item que se obtiene al elegir esta opción
     }
 }
 

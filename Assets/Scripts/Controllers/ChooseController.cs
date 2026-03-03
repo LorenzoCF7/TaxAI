@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class ChooseController : MonoBehaviour
 {
@@ -19,25 +20,45 @@ public class ChooseController : MonoBehaviour
     {
         DestroyLabels();
         animator.SetTrigger("Show");
-        for(int index = 0; index < scene.labels.Count; index++)
+        
+        // Filtrar opciones según items requeridos
+        List<ChooseScene.ChooseLabel> availableLabels = new List<ChooseScene.ChooseLabel>();
+        foreach (var chooseLabel in scene.labels)
+        {
+            // Si no requiere item O si tiene el item requerido
+            if (chooseLabel.requiredItem == null || 
+                (InventoryController.Instance != null && InventoryController.Instance.HasItem(chooseLabel.requiredItem)))
+            {
+                availableLabels.Add(chooseLabel);
+            }
+        }
+        
+        for(int index = 0; index < availableLabels.Count; index++)
         {
             ChooseLabelController newLabel = Instantiate(label.gameObject, transform).GetComponent<ChooseLabelController>();
-            newLabel.scene = scene.labels[index].nextScene;
+            newLabel.scene = availableLabels[index].nextScene;
+            newLabel.grantedItem = availableLabels[index].grantedItem;
 
             if (labelHeight == -1)
             {
                 labelHeight = newLabel.GetHeight();
             }
-            newLabel.Setup(scene.labels[index], this, CalculateLabelPosition(index, scene.labels.Count));
+            newLabel.Setup(availableLabels[index], this, CalculateLabelPosition(index, availableLabels.Count));
         }
 
         Vector2 size = rectTransform.sizeDelta;
-        size.y = (scene.labels.Count + 2) * labelHeight;
+        size.y = (availableLabels.Count + 2) * labelHeight;
         rectTransform.sizeDelta = size;
     }
 
-    public void PerformChoose(StoryScene scene)
+    public void PerformChoose(StoryScene scene, Item grantedItem = null)
     {
+        // Otorgar item si existe
+        if (grantedItem != null && InventoryController.Instance != null)
+        {
+            InventoryController.Instance.AddItem(grantedItem);
+        }
+        
         gameController.PlayScene(scene);
         animator.SetTrigger("Hide");
     }

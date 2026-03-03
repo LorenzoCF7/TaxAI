@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cfa68ec4eee61e4eaced713bfacd37c, type: 3}
+  m_Name: Mario_01
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: 'Martes : 22:00 P.M.'
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: 0a67ef3cc8b1b934cb0d8292f5485301, type: 3}
+    sound: {fileID: 0}
+  - text: "**Te diriges hacia la ubicaci\xF3n marcada y procedes con tu turno de
+      trabajo**"
+    speaker: {fileID: 11400000, guid: 96b6b3c89b136ee47a5b3c32f0e935df, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Buenos d\xEDas se\xF1or "
+    speaker: {fileID: 11400000, guid: daad6e1c9dd542b4794873f013a2b1b8, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Ughhhh\u2026 "
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\xBFSe encuentra bien? "
+    speaker: {fileID: 11400000, guid: daad6e1c9dd542b4794873f013a2b1b8, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "Ughh\u2026 "
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: 'Si... Es solo que... he bebido... un poco '
+    speaker: {fileID: 11400000, guid: e1ecf9d1eea78ac4fb3ad850537f0c30, type: 2}
+    actions: []
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 8357726141364275102, guid: f169ba9176c5a5147adc3e0d1b0c9fee, type: 3}
+  nextScene: {fileID: 11400000, guid: 4d3003c8cf0c13846ab13f21c7c704ee, type: 2}
