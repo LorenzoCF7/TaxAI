@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour
 {
     public GameScene currentScene;
     public BottomBarController bottomBar;
-    public BackgroundController backgroundController;
+    public SpriteSwitcher backgroundController;
     private State state = State.IDLE;
     public ChooseController chooseController;
     public AudioController audioController;
@@ -43,7 +43,7 @@ public class GameController : MonoBehaviour
                     }
                     else
                     {
-                        bottomBar.PlayNextSetence();
+                        bottomBar.PlayNextSentence();
                         PlayAudio((currentScene as StoryScene).sentences[bottomBar.GetSentenceIndex()]);
                     }
                 }

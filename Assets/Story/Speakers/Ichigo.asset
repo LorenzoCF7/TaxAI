@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301d9ed0a7e96fc409544883a286de75, type: 3}
+  m_Name: Ichigo
+  m_EditorClassIdentifier: 
+  speakerName: Ichigo
+  textColor: {r: 1, g: 0.5560052, b: 0, a: 1}
+  sprites:
+  - {fileID: 5780316413124148576, guid: ef03e75031074d2479d21b550a11843f, type: 3}
+  - {fileID: 1530931316084094080, guid: 2c82d708a6d57944abfcdb798f9717c7, type: 3}
+  prefab: {fileID: -2068547793245941621, guid: 53a69403c53f7bc4783ef30c29ad6854, type: 3}

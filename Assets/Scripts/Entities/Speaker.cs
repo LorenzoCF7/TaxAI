@@ -5,4 +5,7 @@ public class Speaker : ScriptableObject
 {
     public string speakerName;
     public Color textColor = Color.white;
+    public Sprite[] sprites;
+    public SpriteController prefab;
+
 }

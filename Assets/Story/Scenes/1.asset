@@ -14,11 +14,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - text: Hello World
-    speaker: {fileID: 11400000, guid: 28aa25e6577a0ae42a20e3b8d8f751c2, type: 2}
+    speaker: {fileID: 11400000, guid: 9de6cc8e76ba37f478eac5a0689b8be6, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 9de6cc8e76ba37f478eac5a0689b8be6, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 400, y: 0}
+      moveSpeed: 0
     music: {fileID: 8300000, guid: 8235fb2e44b46f3459c1c47ca5afd338, type: 3}
     sound: {fileID: 0}
   - text: AAAaaaaaaaa
     speaker: {fileID: 11400000, guid: a2adf77a4c0b12e4ba12a5bd1a1329e0, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 9de6cc8e76ba37f478eac5a0689b8be6, type: 2}
+      spriteIndex: 1
+      actionType: 2
+      coords: {x: 0, y: 0}
+      moveSpeed: 1
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: bbbbbbbb
+    speaker: {fileID: 11400000, guid: a2adf77a4c0b12e4ba12a5bd1a1329e0, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 9de6cc8e76ba37f478eac5a0689b8be6, type: 2}
+      spriteIndex: 0
+      actionType: 0
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: bbbbbbbb
+    speaker: {fileID: 11400000, guid: a2adf77a4c0b12e4ba12a5bd1a1329e0, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 9de6cc8e76ba37f478eac5a0689b8be6, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: -4265513948597989475, guid: 060c8c4f254c50c49bad88c4e6fc7401, type: 3}
