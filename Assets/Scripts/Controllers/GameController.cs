@@ -71,7 +71,11 @@ public class GameController : MonoBehaviour
         if (scene is StoryScene)
         {
             StoryScene storyScene = scene as StoryScene;
-            backgroundController.SwitchImage(storyScene.background);
+            // Solo cambia el fondo si hay uno asignado
+            if (storyScene.background != null)
+            {
+                backgroundController.SwitchImage(storyScene.background);
+            }
             PlayAudio(storyScene.sentences[0]);
             yield return new WaitForSeconds(1f);
             bottomBar.ClearText();
