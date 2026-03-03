@@ -56,19 +56,22 @@ public class BottomBarController : MonoBehaviour
         personNameText.text = "";
     }
 
-    public void PlayScene(StoryScene scene)
+    public void PlayScene(StoryScene scene, int senteceIndex = -1, bool isAnimated = true)
     {
         currentScene = scene;
-        sentenceIndex = -1;
-        PlayNextSentence();
+        this.sentenceIndex = senteceIndex;
+        PlayNextSentence(isAnimated);
     }
-    public void PlayNextSentence()
+    public void PlayNextSentence(bool isAnimated = true)
     {
-        speedFactor = 1f;
-        typingCoroutine = StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
-        personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
-        personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
-        ActsSpeaker();
+        sentenceIndex++;
+        PlaySentence(isAnimated);
+    }
+
+    public void goBack()
+    {
+        sentenceIndex--;
+        PlaySentence(false);
     }
 
     public bool IsCompleted()
@@ -81,6 +84,10 @@ public class BottomBarController : MonoBehaviour
         return sentenceIndex + 1 == currentScene.sentences.Count;
     }
 
+    public bool IsFirstSentence()
+    {
+        return sentenceIndex == 0;
+    }
     public void SpeedUp()
     {
         state = State.SPEEDED_UP;
@@ -92,6 +99,14 @@ public class BottomBarController : MonoBehaviour
         state = State.COMPLETED;
         StopCoroutine(typingCoroutine);
      }
+
+     private void PlaySentence(bool isAnimated = true)
+    {
+        speedFactor = 1f;
+        typingCoroutine = StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
+        personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
+        personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+    }
 
     private IEnumerator TypeText(string text)
     {
